@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souls Finance</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="logo">
+                <!-- Logo -->
+                <a href="#">
+                    <img src="./assets/icon.png" alt="Logo"/>
+                </a>
+                <span>Souls Finance</span>
+            </div>
+
+            <div class="user">
+                <!-- User -->
+                <img src="./assets/iconUserDefault.svg" alt="UserImg">
+
+                <!-- Config button -->
+                <div class="config" id="config">
+                    <img src="./assets/gearUser.svg" alt="Config" id="gearUser">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <header>
+            <section class="cards-container">
+                <div class="cards">
+                    <div>
+                        <span>Entrada</span>
+                        <img src="./assets/addTransaction.svg" alt="Add"/>
+                    </div>
+                    <span id="entry">R$ 0,00</span>
+                </div>
+                <div class="cards">
+                    <div>
+                        <span>Saida</span>
+                        <img src="./assets/addTransaction.svg" alt="Add"/>
+                    </div>
+                    <span id="exit">R$ 0,00</span>
+                </div>
+                <div class="cards">
+                    <span>Total</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+            </section>
+        </header>
+        <footer class="historyContainer">
+            <h1>Historico de transaçoes:</h1>
+            <section class="history">
+                <!-- Add history here by JavaScript -->
+            </section>
+        </footer>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <span>Feito com ❤ por <a href="https://github.com/mr-soulfox" target="_blank" rel="noreferrer" >Marcos Paulo</a> - 2021 </span>
+        </div>
+    </footer>
+
+    <script src="./scripts/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.15rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8f2;
+}
+
+/*Imports to mainpage*/
+.header {
+  width: 100%;
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  background-color: #6b64f7;
+  padding: 30px;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -90px;
+}
+
+.header .logo > a > img {
+  width: 79px;
+  height: 79px;
+}
+
+.header .logo > span {
+  color: #c8c5fc;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.header .user > img {
+  background-color: #f5f5f5;
+  border: 3px solid #f5f5f5;
+  border-radius: 100%;
+  -webkit-box-shadow: 6px 6px 9px #4f5269;
+          box-shadow: 6px 6px 9px #4f5269;
+}
+
+.header .user .config {
+  width: 101px;
+  height: 100px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  top: 33px;
+  right: 33px;
+  -webkit-transition-duration: 0.45s;
+          transition-duration: 0.45s;
+  cursor: pointer;
+}
+
+.header .user .config > img {
+  display: none;
+  width: 40px;
+}
+
+.header .user .config:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cards-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -90px;
+}
+
+.cards-container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  padding: 35px;
+  background-color: #f5f5f5;
+  margin: 10px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  /*Transactions*/
+  /*Total*/
+  /*Values*/
+}
+
+.cards-container .cards > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards-container .cards > div > span {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.cards-container .cards > div > img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.cards-container .cards > span {
+  font-size: 1.4rem;
+}
+
+.cards-container .cards > span:nth-child(2) {
+  font-weight: 700;
+}
+
+.cards-container .cards:hover {
+  margin-top: -10px;
+  -webkit-box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cards-container .cards:nth-child(3) {
+  background-color: #9994fa;
+}
+
+.historyContainer {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.historyContainer > h1 {
+  color: #44475a;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.historyContainer .history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+/*Scroll style*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #1a1aff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 100, 247, 0.6);
+}
+
+/*footer style*/
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 3px;
+  text-align: center;
+  background-color: #c8c5fc;
+}
+
+.footer > div > span {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer > div > span > a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
