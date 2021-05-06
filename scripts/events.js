@@ -6,6 +6,23 @@ document.getElementById('config').addEventListener('mouseout', () => {
     document.getElementById('gearUser').style.display = 'none'
 })
 
+//show/hide user menu
+document.getElementById('config').addEventListener('click', () => {
+    const userMenu = document.getElementById('userMenu').style.display
+    document.getElementById('userMenu').style.display = userMenu == 'none' ? 'flex' : 'none'
+})
+
+//menu content
+if (localStorage.getItem('logged')) {
+    document.getElementById('notLogged').style.display = 'none'
+    document.getElementById('logged').style.display = 'block'
+
+} else {
+    document.getElementById('logged').style.display = 'none'
+    document.getElementById('notLogged').style.display = 'block'
+
+}
+
 //show/hide modal
 function modal(type) {
     //show container

@@ -385,6 +385,69 @@ body {
   margin-right: 90px;
 }
 
+.userMenu {
+  width: 170px;
+  position: fixed;
+  top: 140px;
+  right: 3px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-animation: menu 0.75s ease-in-out;
+          animation: menu 0.75s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.userMenu .logged {
+  display: none;
+}
+
+.userMenu .not-logged {
+  display: none;
+}
+
+.userMenu .not-logged > button {
+  width: 130px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.userMenu .not-logged > button:hover {
+  background-color: #f2f2f2;
+}
+
+.userMenu .not-logged > button:focus {
+  background-color: #e8e8e8;
+}
+
+@-webkit-keyframes menu {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 3px;
+  }
+}
+
+@keyframes menu {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 3px;
+  }
+}
+
 /*Scroll style*/
 ::-webkit-scrollbar {
   width: 10px;
