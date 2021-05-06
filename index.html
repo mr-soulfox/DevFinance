@@ -48,7 +48,7 @@
                         <span>Saida</span>
                         <img src="./assets/addTransaction.svg" alt="Add"/>
                     </div>
-                    <span id="exit">R$ 0,00</span>
+                    <span id="exit">- R$ 0,00</span>
                 </div>
                 <div class="cards">
                     <span>Total</span>
@@ -63,6 +63,21 @@
             </section>
         </footer>
     </main>
+
+    <aside id="containerModal">
+        <section class="modal">
+            <h1>Nova transação <small id="typeModal">(???)</small></h1>
+            <div class="inputsModal">
+                <input type="text" name="description" id="description" maxlength="60" placeholder="Descrição"/>
+                <input type="text" name="value" maxlength="16" id="value" placeholder="R$ 0,00"/>
+                <input type="date" name="date" id="date">                
+            </div>
+            <div class="buttonsModal">
+                <button id="cancel">CANCELAR</button>
+                <button id="save">SALVAR</button>
+            </div>
+        </section>
+    </aside>
 
     <footer class="footer">
         <div>
