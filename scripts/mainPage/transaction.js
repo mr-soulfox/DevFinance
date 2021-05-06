@@ -34,7 +34,7 @@ function error() {
         date.style.border = '1px solid red'
         error.textContent = 'Escolha a data'
 
-    } else {
+    } else {        
         return true
     }
 

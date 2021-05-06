@@ -40,4 +40,10 @@ function modal(type) {
     document.getElementById('value').value = ''
     document.getElementById('description').value = ''
     document.getElementById('date').value = ''
+
+    //clear errors
+    document.getElementById('description').style.border = 'none'
+    document.getElementById('value').style.border = 'none'
+    document.getElementById('date').style.border = 'none' 
+    document.getElementById('error').textContent = ''
 }
