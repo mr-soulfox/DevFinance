@@ -12,6 +12,10 @@ body {
   background-color: #f8f8f2;
 }
 
+#body {
+  background-color: #827cf8;
+}
+
 /*Imports to mainpage*/
 .header {
   width: 100%;
@@ -447,6 +451,134 @@ body {
   to {
     right: 3px;
   }
+}
+
+/*Imports to acessPage*/
+.center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.main-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.main-container .main {
+  width: 30%;
+  min-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gainsboro;
+  border-radius: 9px;
+  margin: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 3px 3px 9px #1a1a1a;
+          box-shadow: 3px 3px 9px #1a1a1a;
+}
+
+.main-container .main .register-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main .register-login img {
+  width: 130px;
+}
+
+.main-container .main .register-login label {
+  margin-left: -100%;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-container .main .register-login input {
+  margin: 5px;
+  width: 110%;
+  height: 45px;
+  padding: 5px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.main-container .main .register-login input:focus {
+  background-color: #efefe1;
+  outline: none;
+}
+
+.main-container .main .register-login button {
+  width: 130px;
+  height: 50px;
+  margin: 13px;
+  border: none;
+  border-radius: 3px;
+  background-color: #544cf6;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.main-container .main .register-login button:hover {
+  background-color: #7973f8;
 }
 
 /*Scroll style*/
