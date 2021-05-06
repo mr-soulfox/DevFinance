@@ -420,6 +420,7 @@ body {
   border-radius: 3px;
   border: none;
   background-color: #f5f5f5;
+  cursor: pointer;
 }
 
 .userMenu .not-logged > button:hover {

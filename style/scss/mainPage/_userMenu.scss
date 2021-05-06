@@ -24,6 +24,7 @@
             border-radius: 3px;
             border: none;
             background-color: #f5f5f5;
+            cursor: pointer;
 
             &:hover {
                 background-color: darken($color: #fff, $amount: 5)
