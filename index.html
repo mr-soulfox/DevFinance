@@ -39,14 +39,14 @@
                 <div class="cards">
                     <div>
                         <span>Entrada</span>
-                        <img src="./assets/addTransaction.svg" alt="Add"/>
+                        <img src="./assets/addTransaction.svg" alt="Add" onclick="modal('Entrada')"/>
                     </div>
                     <span id="entry">R$ 0,00</span>
                 </div>
                 <div class="cards">
                     <div>
                         <span>Saida</span>
-                        <img src="./assets/addTransaction.svg" alt="Add"/>
+                        <img src="./assets/addTransaction.svg" alt="Add" onclick="modal('Saida')"/>
                     </div>
                     <span id="exit">- R$ 0,00</span>
                 </div>
@@ -58,6 +58,11 @@
         </header>
         <footer class="historyContainer">
             <h1>Historico de transaçoes:</h1>
+            <div class="table-header">
+                <span>Descrição</span>
+                <span>Valor</span>
+                <span>Data</span>
+            </div>
             <section class="history">
                 <!-- Add history here by JavaScript -->
             </section>
@@ -65,16 +70,21 @@
     </main>
 
     <aside id="containerModal">
-        <section class="modal">
+        <section class="modal" id="modal">
+            <img src="./assets/close.svg" alt="close" onclick="modal('')"/>
             <h1>Nova transação <small id="typeModal">(???)</small></h1>
+
+            <small style="color: red;" id="error"><!--Show error--></small>
+
             <div class="inputsModal">
                 <input type="text" name="description" id="description" maxlength="60" placeholder="Descrição"/>
                 <input type="text" name="value" maxlength="16" id="value" placeholder="R$ 0,00"/>
-                <input type="date" name="date" id="date">                
+                <input type="date" name="date" id="date"/>  
             </div>
+
             <div class="buttonsModal">
-                <button id="cancel">CANCELAR</button>
-                <button id="save">SALVAR</button>
+                <button id="cancel" onclick="modal('')">CANCELAR</button>
+                <button id="save" form="form" onclick="save()">SALVAR</button>
             </div>
         </section>
     </aside>
@@ -85,6 +95,7 @@
         </div>
     </footer>
 
-    <script src="./scripts/style.js"></script>
+    <script src="./scripts/events.js"></script>
+    <script src="./scripts/mainPage/transaction.js"></script>
 </body>
 </html>

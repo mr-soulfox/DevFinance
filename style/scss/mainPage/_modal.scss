@@ -14,15 +14,24 @@
     display: none;
     width: 65%;
     max-width: 700px;
-    height: 400px;
+    height: 450px;
     margin-top: 10%;
     padding: 30px;
     background-color: darken($color: #f5f5f5, $amount: 5);
     border-radius: 10px;
+    animation: modal 0.6s ease-in-out;
 
     & > h1 {
         font-size: 1.8rem;
         color: darken($color: #44475a, $amount: 10);
+    }
+
+    & > img {
+        width: 45px;
+        position: relative;
+        top: -40px;
+        left: 99%;
+        cursor: pointer;
     }
 
     .inputsModal {
@@ -57,6 +66,8 @@
             font-weight: 700;
             border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.0);
+            cursor: pointer;
+
             &:hover {
                 background-color: darken($color: #fff, $amount: 5);
             }
@@ -74,12 +85,23 @@
             font-weight: 700;
             border-radius: 5px;
             background-color: #50fa7b;
+            cursor: pointer;
+            
             &:hover {
-                background-color: darken($color: #50fa7b, $amount: 5);
-            }
-            &:focus {
                 background-color: darken($color: #50fa7b, $amount: 10);
             }
+            &:focus {
+                background-color: darken($color: #50fa7b, $amount: 15);
+            }
         }
+    }
+}
+
+@keyframes modal {
+    from {
+        margin-top: -10%;
+    }
+    to {
+        margin-top: 10%;
     }
 }
