@@ -12,32 +12,34 @@
 </head>
 <body id="body">
     <div class="center">
-        SOULS<img src="../assets/icon.png" alt="logo"/>FINANCE
+        SOULS<img src="../assets/icon.png" alt="logo" onclick="document.location.href = '/'"/>FINANCE
     </div>
 
     <main class="main-container">
         <sectio class="main">
-            <div class="login" style="display: none;">
-                <!-- Login -->
-                Login
-            </div>
-            
-            <div class="register-login">
-                <!-- Register -->
-                <img src="../assets/iconUserDefault.svg" alt="User Image">
+            <div class="register-login" id="access">
+                <!-- Register and login -->
+                <img src="../assets/iconUserDefault.svg" alt="User Image" id="userImage">
 
-                <label for="name">Nome:</label>
+                <label for="name" id="nameLabel">Nome:</label> 
                 <input type="text" name="name" id="name" placeholder="Nome" maxlength="60"/>
 
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Exemplo@gmail.com">
+                <label for="email" id="emailLabel">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Exemplo@gmail.com"/>
 
-                <label for="password">Senha:</label>
-                <input type="password" name="senha" id="password" maxlength="30">
+                <label for="password" id="passwordLabel">Senha:</label>
+                <input type="password" name="senha" id="password" maxlength="30"/>
 
-                <button>Cadastrar</button>
+                <button onclick="register()" id="btn">Cadastrar</button>
+
+                <a href="#login" onclick="modifieAcessPage('register')" id="login">Já possui uma conta?</a>
+                <a href="#register" onclick="modifieAcessPage('login')" id="register" style="display:none;">Não possui uma conta?</a>
             </div>
+
         </section>
     </main>
+
+    <script src="../scripts/accessPage/register.js"></script>
+    <script src="../scripts/events.js"></script>
 </body>
 </html>

@@ -475,6 +475,10 @@ body {
   color: #fff;
 }
 
+.center > img {
+  cursor: pointer;
+}
+
 .main-container {
   width: 100%;
   display: -webkit-box;
@@ -495,7 +499,7 @@ body {
 
 .main-container .main {
   width: 30%;
-  min-width: 400px;
+  min-width: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,7 +542,7 @@ body {
 }
 
 .main-container .main .register-login label {
-  margin-left: -100%;
+  margin-left: -95%;
   margin-top: 10px;
   font-size: 1.5rem;
   font-weight: 700;
@@ -579,6 +583,15 @@ body {
 
 .main-container .main .register-login button:hover {
   background-color: #7973f8;
+}
+
+.main-container .main .register-login > a {
+  font-size: 1rem;
+  color: #6272a4;
+}
+
+.main-container .main .register-login > a:hover {
+  color: #7280ad;
 }
 
 /*Scroll style*/

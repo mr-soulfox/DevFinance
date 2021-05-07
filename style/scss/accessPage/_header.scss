@@ -9,4 +9,8 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
+
+    & > img {
+        cursor: pointer;
+    }
 }

@@ -47,3 +47,42 @@ function modal(type) {
     document.getElementById('date').style.border = 'none' 
     document.getElementById('error').textContent = ''
 }
+
+function modifieAcessPage(page) {
+    //clear all
+    document.getElementById('name').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('password').value = ''
+
+    if (page == 'register') {
+        //link
+        document.getElementById('register').style.display = 'block'
+        document.getElementById('login').style.display = 'none'
+
+        //label and name input
+        document.getElementById('nameLabel').style.display = 'none'
+        document.getElementById('name').style.display = 'none'
+
+        //image
+        document.getElementById('userImage').style.display = 'none'
+
+        //button 
+        document.getElementById('btn').textContent = 'Entrar'
+
+    } else {
+        //link
+        document.getElementById('login').style.display = 'block'
+        document.getElementById('register').style.display = 'none'
+
+        //label and name input
+        document.getElementById('nameLabel').style.display = 'block'
+        document.getElementById('name').style.display = 'block'
+
+        //image
+        document.getElementById('userImage').style.display = 'block'
+
+        //button 
+        document.getElementById('btn').textContent = 'Cadastrar'
+
+    }
+}   
