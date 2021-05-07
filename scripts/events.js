@@ -17,6 +17,10 @@ if (localStorage.getItem('logged')) {
     document.getElementById('notLogged').style.display = 'none'
     document.getElementById('logged').style.display = 'block'
 
+    //fill details
+    document.getElementById('userName').textContent = localStorage.getItem('name')
+    document.getElementById('userEmail').textContent = localStorage.getItem('email')
+
 } else {
     document.getElementById('logged').style.display = 'none'
     document.getElementById('notLogged').style.display = 'block'
