@@ -95,7 +95,7 @@ function verify() {
     const logged = Boolean(localStorage.getItem('logged'))
 
     if (logged) {
-        document.location.replace('/')
+        document.location.replace('/SoulsFinance/')
     }    
 }
 
