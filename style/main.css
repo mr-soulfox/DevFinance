@@ -16,6 +16,10 @@ body {
   background-color: #827cf8;
 }
 
+main {
+  margin-bottom: 100px;
+}
+
 /*Imports to mainpage*/
 .header {
   width: 100%;
@@ -296,16 +300,10 @@ body {
   text-overflow: ellipsis;
 }
 
-.money {
-  margin-right: -95px;
-}
-
-.date {
-  margin-left: 15px;
-}
-
 .description {
-  margin-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "...";
 }
 
 #containerModal {

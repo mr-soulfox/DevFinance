@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onbeforeunload="saveHistory()" onload="checkbox(), verifyHistory()">
     <header>
         <section class="header">
             <div class="logo">
@@ -39,6 +39,7 @@
                     <span>Perfil: </span><br/>
                     <small id="userName"></small>
                     <small id="userEmail"></small>
+                    <input type="checkbox" name="save" id="save" onchange="saveHistory('confirm')">-<small>Salvar historico?</small>
                 </div>
 
                 <div class="not-logged" id="notLogged">
@@ -113,5 +114,6 @@
 
     <script src="./scripts/events.js"></script>
     <script src="./scripts/mainPage/transaction.js"></script>
+    <script src="./scripts/mainPage/save.js"></script>
 </body>
 </html>

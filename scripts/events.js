@@ -98,3 +98,9 @@ function verify() {
         document.location.replace('/')
     }    
 }
+
+function checkbox() {
+    const checked = localStorage.getItem('save')
+    
+    document.getElementById('save').checked = checked == 'true' ? true : false
+}
