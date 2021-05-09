@@ -20,7 +20,7 @@ function register() {
         getSave(name, email, password, 'save')
         
         //redirect
-        document.location.replace('/')
+        document.location.replace('/SoulsFinance/')
 
     } else {
         alert('Preencha tudo')
