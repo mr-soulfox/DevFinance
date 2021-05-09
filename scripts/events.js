@@ -90,3 +90,11 @@ function modifieAcessPage(page) {
 
     }
 }   
+
+function verify() {
+    const logged = Boolean(localStorage.getItem('logged'))
+
+    if (logged) {
+        document.location.replace('/')
+    }    
+}
