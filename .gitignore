@@ -1,1 +1,4 @@
 .vscode
+cypress
+
+cypress.json
