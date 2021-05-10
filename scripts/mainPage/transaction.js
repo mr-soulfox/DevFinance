@@ -68,7 +68,7 @@ function error() {
         date.style.border = '1px solid red'
         error.textContent = 'Escolha a data'
 
-    } else if (isNaN(moneyTest)) {
+    } else if (isNaN(moneyTest) || (money.value).search('-') != -1) {
         money.style.border = '1px solid red'
         error.textContent = 'Apenas numeros'
 
